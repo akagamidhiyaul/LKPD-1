@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Opacity</title>
+    <style>
+        #image-display {
+            max-width: 100%;
+            max-height: 400px;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <label for="image-select">Ubah :</label>
+    <select id="image-select">
+        <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS61ao6YP55xtV77AZl_cci0EKcDiquIfzuTw&s">Gambar 1</option>
+        <option value="https://p16-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/6a487050e7f10d9b1a53b5f6b2af1eca~c5_720x720.jpeg">Gambar 2</option>
+        <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5I3_fH9jrE2tCs--YYfgYbblvp7XyovVUdA&s">Gambar 3</option>
+    </select>
+
+    <label for="opacity-select">Pilih Opacity:</label>
+    <select id="opacity-select">
+        <option value="1">1</option>
+        <option value="0.5">0.5</option>
+        <option value="0.2">0.2</option>
+    </select>
+    
+
+    <img id="image-display" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS61ao6YP55xtV77AZl_cci0EKcDiquIfzuTw&s" alt="Selected Image">
+
+    <script>
+        const imageSelect = document.getElementById('image-select');
+        const opacitySelect = document.getElementById('opacity-select');
+        const imageDisplay = document.getElementById('image-display');
+
+        imageSelect.addEventListener('change', function() {
+            imageDisplay.src = this.value;
+        });
+
+        opacitySelect.addEventListener('change', function() {
+            imageDisplay.style.opacity = this.value;
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.atas {
+    background-image: url('https://cdn.antarafoto.com/cache/1200x800/2024/04/07/tempat-istirahat-di-puncak-bogor-1azqi-dom.jpg');
+    background-size: cover;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.destination {
+    padding: 2em;
+}
+
+.destination ul {
+    list-style: none;
+}
+
+.destination li {
+    margin-bottom: 20px;
+}
+
+.destination img {
+    width: 800px;
+    border-radius: 10px;
+}
+
+.read-more {
+    background-color: #333;
+    color: #fff;
+}
